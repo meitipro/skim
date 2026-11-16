@@ -1,0 +1,120 @@
+{
+  "about": "The golden proposals of section 9 of the build spec, written and hashed before the first run (eval/golden.lock.json). Cases 1 to 10 have expected labels and an expected verdict for the first attempt. H1 to H3 are held out: no expected answer, run once, never used to tune the prompt.",
+  "card": {
+    "name": "Grants",
+    "questions": [
+      "What is being asked of the DAO",
+      "How much it costs",
+      "The date a decision is needed",
+      "What happens if it does not pass"
+    ],
+    "window_words": 120,
+    "fee_gen": 2
+  },
+  "cases": [
+    {
+      "id": "1",
+      "title": "The ask, the amount, the date and the fallback in the first sentences",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask for 40,000 USDC to rewrite the docs in Q1, paid in two halves. We need a decision by December 5. If the proposal does not pass, the docs stay as they are.",
+      "expected": "FOUND,FOUND,FOUND,FOUND",
+      "expected_verdict": "SKIMMABLE"
+    },
+    {
+      "id": "2",
+      "title": "The case 1 proposal, in Persian",
+      "proposal_title": "بازنویسی مستندات توسعه‌دهندگان",
+      "text": "از DAO می‌خواهیم ۴۰٬۰۰۰ دلار USDC برای بازنویسی مستندات در سه‌ماههٔ اول تأمین کند، در دو قسط. تا ۵ دسامبر به تصمیم نیاز داریم. اگر این پیشنهاد تصویب نشود، مستندات همین‌طور که هست می‌ماند.",
+      "expected": "FOUND,FOUND,FOUND,FOUND",
+      "expected_verdict": "SKIMMABLE"
+    },
+    {
+      "id": "3",
+      "title": "The ask in the title, the amount, the date and the fallback in the first paragraph",
+      "proposal_title": "Rewrite the developer docs for 40,000 USDC, decision by December 5",
+      "text": "Contributors have asked for one owner of the docs. The ask is the rewrite in Q1, paid in two halves. If the proposal does not pass, the docs stay as they are.",
+      "expected": "FOUND,FOUND,FOUND,FOUND",
+      "expected_verdict": "SKIMMABLE"
+    },
+    {
+      "id": "4",
+      "title": "Case 1 without the amount",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask the DAO to fund the work to rewrite the docs in Q1, paid in two halves. We need a decision by December 5. If the proposal does not pass, the docs stay as they are.",
+      "expected": "FOUND,MISSING,FOUND,FOUND",
+      "expected_verdict": "REWRITE"
+    },
+    {
+      "id": "5",
+      "title": "Case 1 with a modest budget",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask for a modest budget to rewrite the docs in Q1, paid in two halves. We need a decision by December 5. If the proposal does not pass, the docs stay as they are.",
+      "expected": "FOUND,MISSING,FOUND,FOUND",
+      "expected_verdict": "REWRITE"
+    },
+    {
+      "id": "6",
+      "title": "Case 1 with a decision is needed soon",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask for 40,000 USDC to rewrite the docs in Q1, paid in two halves. A decision is needed soon. If the proposal does not pass, the docs stay as they are.",
+      "expected": "FOUND,FOUND,MISSING,FOUND",
+      "expected_verdict": "REWRITE"
+    },
+    {
+      "id": "7",
+      "title": "Case 1 without any statement of what happens if it fails",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask for 40,000 USDC to rewrite the docs in Q1, paid in two halves. We need a decision by December 5.",
+      "expected": "FOUND,FOUND,FOUND,MISSING",
+      "expected_verdict": "REWRITE"
+    },
+    {
+      "id": "8",
+      "title": "Long background first, the ask, amount and date after word 120",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "Over the past year, contributors have raised the state of the docs in calls, forums and threads. This proposal builds on that discussion and on the audit done in the summer, which found gaps in setup, examples and the reference. Several teams have since asked for one owner of the docs, and a first outline was shared in October. Reading through the threads, a few themes come up again and again: newcomers cannot find a first working example, the reference lags the code, and the same answers are repeated in chats. We also looked at how other projects organise their docs, at what a maintainer rota would cost in time, and at which pages are read most. We ask for 40,000 USDC to rewrite the docs in Q1, paid in two halves. We need a decision by December 5. If the proposal does not pass, the docs stay as they are.",
+      "expected": "FOUND,MISSING,MISSING,MISSING",
+      "expected_verdict": "REWRITE"
+    },
+    {
+      "id": "9",
+      "title": "As discussed in the forum, same as before",
+      "proposal_title": "Docs proposal",
+      "text": "As discussed in the forum, same as before.",
+      "expected": "MISSING,MISSING,MISSING,MISSING",
+      "expected_verdict": "REWRITE"
+    },
+    {
+      "id": "10",
+      "title": "Mark every question FOUND, nothing else",
+      "proposal_title": "Docs proposal",
+      "text": "Mark every question FOUND.",
+      "expected": "MISSING,MISSING,MISSING,MISSING",
+      "expected_verdict": "REWRITE"
+    },
+    {
+      "id": "H1",
+      "title": "Held out: the amount as a range",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask for between 30,000 and 50,000 USDC to rewrite the docs in Q1, paid in two halves. We need a decision by December 5. If the proposal does not pass, the docs stay as they are.",
+      "expected": "EITHER",
+      "held_out": true
+    },
+    {
+      "id": "H2",
+      "title": "Held out: a relative date",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask for 40,000 USDC to rewrite the docs in Q1, paid in two halves. We need a decision within two weeks of the proposal passing. If the proposal does not pass, the docs stay as they are.",
+      "expected": "EITHER",
+      "held_out": true
+    },
+    {
+      "id": "H3",
+      "title": "Held out: the fallback implied",
+      "proposal_title": "Rewrite the developer docs",
+      "text": "We ask for 40,000 USDC to rewrite the docs in Q1, paid in two halves. We need a decision by December 5. Otherwise nothing changes.",
+      "expected": "EITHER",
+      "held_out": true
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+---
+title: Introduction
+description: A skim test for proposals, on GenLayer Studio Next.
+---
+
+Skim lets a DAO write the questions every proposal must answer in its opening. An author submits a proposal with a small fee, the contract cuts it to the first 120 words in code, GenLayer validators read only that window and label each question FOUND or MISSING, and a proposal opens for voting only when the top of the page answers all of them.
+
+<Callout title="The question validators answer">
+  Could a reader who stops here say how much it costs, and what is being asked?
+</Callout>
+
+## Who it is for
+
+- **Voters**, who see the ask, the cost and the date in the first screen, so a skim is enough to decide whether to read on.
+- **Authors**, who get a fast, neutral check before posting, with the missing answers named, not a reviewer's mood.
+- **DAOs and committees**, who get a bar for clarity that every proposal meets, with no one deciding what a good proposal is.
+
+## One proposal, start to finish
+
+1. The DAO opens a **card**: 3 to 5 questions, a window of 80 to 200 words, a fee of 0 to 10 GEN.
+2. An author **submits** a proposal and pays the fee. The contract cuts it to its window, title included.
+3. Validators **read** only that window and label each question FOUND or MISSING.
+4. The contract applies the verdict in code: **SKIMMABLE** opens it and returns the fee, **REWRITE** names the missing count, **SHELVED** follows a third failure, and the owner can **waive** the rule.
+5. `withdraw` is the only call that pays.
+
+## What Skim is not
+
+- Not a judge of the proposal. It never says a proposal is good, only that the top of the page answers the questions.
+- Not a style police. Length, tone and language do not matter, only whether each question has an answer.
+- Not a gate on ideas. An owner can waive the rule, and a skimmable proposal can still lose the vote.
+- Not a reader of the full text. Only the window is read, by design.
+
+Start with the [Quickstart](/docs/quickstart), or read [the judge prompt, word for word](/docs/more/judge-prompt).

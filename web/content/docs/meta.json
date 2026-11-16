@@ -1,0 +1,15 @@
+{
+  "title": "Skim docs",
+  "pages": [
+    "---Getting started---",
+    "index",
+    "quickstart",
+    "write-a-skimmable-proposal",
+    "---Concepts---",
+    "...concepts",
+    "---Reference---",
+    "...reference",
+    "---More---",
+    "...more"
+  ]
+}

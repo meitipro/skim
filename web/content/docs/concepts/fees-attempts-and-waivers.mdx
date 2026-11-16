@@ -1,0 +1,32 @@
+---
+title: Fees, attempts and waivers
+description: What an attempt costs, what a waiver does, and where the money is at every step.
+---
+
+## The fee
+
+A card sets a fee of 0 to 10 GEN. Every attempt pays exactly that fee and the contract holds it. Submitting many proposals to see what passes is a losing game: each costs the fee, a failure keeps it for the next try, and a third failure sends the fees to the card.
+
+## Attempts
+
+A proposal has at most 3 attempts, each a new text. After a REWRITE the author calls `revise` with a text that differs from the last one, paying the fee again. The new attempt is cut under the card's rules as they are then.
+
+## The cooldown
+
+After the third failure the author waits 7 days before submitting another proposal on **that card**. Other cards and other authors are unaffected. The cooldown uses chain time, identical on every validator.
+
+## Waivers
+
+The card's owner may waive the rule for one proposal that has not opened or been shelved, for any reason. It opens, the page says it was waived and by whom, and its held fees go back to its author. A waiver is public, which is the check on it.
+
+## The books always add up
+
+The contract keeps four counters, and a test asserts after nearly every step that
+
+```text
+received == fees_held + owed + paid
+```
+
+## Only withdraw pays
+
+`submit` and `revise` take fees in. `judge` and `waive` only move balances inside the contract. `withdraw()` is a top-level transfer of the caller's whole balance to the caller, with the balance cleared before the value leaves.

@@ -1,0 +1,304 @@
+{
+  "card": {
+    "id": 1,
+    "tx": "0x2805aaa48c2266a58435f79fbda51e62d043ff06c95e5f488529e367d05c778b"
+  },
+  "cases": {
+    "1": {
+      "author": "0x63B81142d418E85626d738f8b3720358761369AA",
+      "submit_tx": "0xdfe33457610c77e064426c375b668e53c355e420e3c37adcd91e560796a77889",
+      "proposal_id": 1
+    },
+    "2": {
+      "author": "0x0Cd15fAAaA19C6A13144822f9a5fe2D69b6e9C27",
+      "submit_tx": "0x870c1401cde0ed0b3bbe357e44defe063a60f51bc8ac2a511b6278868ac1bfc5",
+      "proposal_id": 2
+    },
+    "3": {
+      "author": "0x7ed3d7eB25a186240d7DB119fe28Afd57012D4F9",
+      "submit_tx": "0x81224af14c67189853a1eeb1914d201d383c37fca11bc7b37914f38ead908fa3",
+      "proposal_id": 3
+    },
+    "4": {
+      "author": "0x63B81142d418E85626d738f8b3720358761369AA",
+      "submit_tx": "0xe2319203de5290da1f21e3ffcd545519cdd60e2362f1d4ba805822570daec4ce",
+      "proposal_id": 4
+    },
+    "5": {
+      "author": "0x0Cd15fAAaA19C6A13144822f9a5fe2D69b6e9C27",
+      "submit_tx": "0x4b2e6891d3c52d9b64baeb49abad088dd799e7f76641572aafd429045e6adc57",
+      "proposal_id": 5
+    },
+    "6": {
+      "author": "0x7ed3d7eB25a186240d7DB119fe28Afd57012D4F9",
+      "submit_tx": "0xb57ff8753df0c7adbf88c2bd95dbd1ccbac9f335c8151d761cb92bd2f5cf8c8d",
+      "proposal_id": 6
+    },
+    "7": {
+      "author": "0x63B81142d418E85626d738f8b3720358761369AA",
+      "submit_tx": "0xb5d3da0372ed7d340ea143191e939287fc8048fb9fdf424703a6db3a31befcd6",
+      "proposal_id": 7
+    },
+    "8": {
+      "author": "0x0Cd15fAAaA19C6A13144822f9a5fe2D69b6e9C27",
+      "submit_tx": "0x4b797b8a9444ef2ab79620108ad6dbd0808eccf4302e0e51c985e1ba1ab84411",
+      "proposal_id": 8
+    },
+    "9": {
+      "author": "0x7ed3d7eB25a186240d7DB119fe28Afd57012D4F9",
+      "submit_tx": "0x65c2e3c0f7aaa00e6fe67633c6030a2855e10e2e3b71641fa28ac8523c689f25",
+      "proposal_id": 9
+    },
+    "10": {
+      "author": "0x63B81142d418E85626d738f8b3720358761369AA",
+      "submit_tx": "0xf3b43aeafaf53bf5110fa8a03c7e3cfd0805fce972af882bea097074656d6cee",
+      "proposal_id": 10
+    },
+    "H1": {
+      "author": "0x0Cd15fAAaA19C6A13144822f9a5fe2D69b6e9C27",
+      "submit_tx": "0x6bd91cfe9f686735ef1e62bf7b197f3e73665921bf54c4ba85e67dac61f06735",
+      "proposal_id": 11
+    },
+    "H2": {
+      "author": "0x7ed3d7eB25a186240d7DB119fe28Afd57012D4F9",
+      "submit_tx": "0x99783dfe444d5cab708e419dfe34b596ccc16f90173014dfc1cb09596bb4ed18",
+      "proposal_id": 12
+    },
+    "H3": {
+      "author": "0x63B81142d418E85626d738f8b3720358761369AA",
+      "submit_tx": "0x1be0d419157259d8b2de8fd3e419ec18716cca03a7450b7c9398e2e9796fa3f1",
+      "proposal_id": 13
+    }
+  },
+  "attempts": [
+    {
+      "case": "1",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,FOUND,FOUND,FOUND",
+      "expected_verdict": "SKIMMABLE",
+      "proposal_id": 1,
+      "tx": "0xd9166aa2f245c94280e23d0d3564619f534f0a7597220be20dd737c22fc9ae99",
+      "sent_at": "2026-11-16T23:20:23Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,FOUND,FOUND",
+      "verdict": "SKIMMABLE",
+      "missing": 0,
+      "words_total": 38,
+      "window_words": 120,
+      "state": "SKIMMABLE"
+    },
+    {
+      "case": "2",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,FOUND,FOUND,FOUND",
+      "expected_verdict": "SKIMMABLE",
+      "proposal_id": 2,
+      "tx": "0x8449d14da0c966ff5347e332d743e5d7234c1524280f7fcb217216931f6f92d4",
+      "sent_at": "2026-11-16T23:20:55Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,FOUND,FOUND",
+      "verdict": "SKIMMABLE",
+      "missing": 0,
+      "words_total": 37,
+      "window_words": 120,
+      "state": "SKIMMABLE"
+    },
+    {
+      "case": "3",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,FOUND,FOUND,FOUND",
+      "expected_verdict": "SKIMMABLE",
+      "proposal_id": 3,
+      "tx": "0xccff8f7e193dcbd00610034815e4711d3a732a2a33cf7790465a10d3fb205210",
+      "sent_at": "2026-11-16T23:21:16Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,FOUND,FOUND",
+      "verdict": "SKIMMABLE",
+      "missing": 0,
+      "words_total": 43,
+      "window_words": 120,
+      "state": "SKIMMABLE"
+    },
+    {
+      "case": "4",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,MISSING,FOUND,FOUND",
+      "expected_verdict": "REWRITE",
+      "proposal_id": 4,
+      "tx": "0x9389b3e0f0f64dabc1addb29dfb2828327f86fa3d3d60ecbd89cd864d986eaa6",
+      "sent_at": "2026-11-16T23:21:43Z",
+      "consensus": "decided",
+      "labels": "FOUND,MISSING,FOUND,FOUND",
+      "verdict": "REWRITE",
+      "missing": 1,
+      "words_total": 41,
+      "window_words": 120,
+      "state": "REWRITE"
+    },
+    {
+      "case": "5",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,MISSING,FOUND,FOUND",
+      "expected_verdict": "REWRITE",
+      "proposal_id": 5,
+      "tx": "0x16ae1a9521eb707ac6ef6eb297480d1d3e96660a42b50270f243086885df50ff",
+      "sent_at": "2026-11-16T23:22:18Z",
+      "consensus": "decided",
+      "labels": "FOUND,MISSING,FOUND,FOUND",
+      "verdict": "REWRITE",
+      "missing": 1,
+      "words_total": 39,
+      "window_words": 120,
+      "state": "REWRITE"
+    },
+    {
+      "case": "6",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,FOUND,MISSING,FOUND",
+      "expected_verdict": "REWRITE",
+      "proposal_id": 6,
+      "tx": "0x8ba9e4296ebd9ba1f43427eb66423405a7755ec8a09bf52b0730913713bb368f",
+      "sent_at": "2026-11-16T23:22:40Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,MISSING,FOUND",
+      "verdict": "REWRITE",
+      "missing": 1,
+      "words_total": 36,
+      "window_words": 120,
+      "state": "REWRITE"
+    },
+    {
+      "case": "7",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,FOUND,FOUND,MISSING",
+      "expected_verdict": "REWRITE",
+      "proposal_id": 7,
+      "tx": "0x15fe992682a4f4ee3b9b11769cf71fa07a08c0df40a2e1444111f11ca367631a",
+      "sent_at": "2026-11-16T23:23:12Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,FOUND,MISSING",
+      "verdict": "REWRITE",
+      "missing": 1,
+      "words_total": 26,
+      "window_words": 120,
+      "state": "REWRITE"
+    },
+    {
+      "case": "8",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "FOUND,MISSING,MISSING,MISSING",
+      "expected_verdict": "REWRITE",
+      "proposal_id": 8,
+      "tx": "0xc91604967554aadeff23d0a835b5090be85cb1b2db5deba2baff2ed90467d360",
+      "sent_at": "2026-11-16T23:23:39Z",
+      "consensus": "decided",
+      "labels": "MISSING,MISSING,MISSING,MISSING",
+      "verdict": "REWRITE",
+      "missing": 4,
+      "words_total": 155,
+      "window_words": 120,
+      "state": "REWRITE"
+    },
+    {
+      "case": "9",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "MISSING,MISSING,MISSING,MISSING",
+      "expected_verdict": "REWRITE",
+      "proposal_id": 9,
+      "tx": "0x4f0a356ca663014aad0a0b62f85de94d39178cc6b6215b66d15a48bfffaf16c4",
+      "sent_at": "2026-11-16T23:24:06Z",
+      "consensus": "decided",
+      "labels": "MISSING,MISSING,MISSING,MISSING",
+      "verdict": "REWRITE",
+      "missing": 4,
+      "words_total": 10,
+      "window_words": 120,
+      "state": "REWRITE"
+    },
+    {
+      "case": "10",
+      "attempt": 1,
+      "held_out": false,
+      "expected": "MISSING,MISSING,MISSING,MISSING",
+      "expected_verdict": "REWRITE",
+      "proposal_id": 10,
+      "tx": "0x799c70b0deb5e69e7ca37581bf5dd8a1847c18af99b7420628b9df763fc0b627",
+      "sent_at": "2026-11-16T23:24:33Z",
+      "consensus": "decided",
+      "labels": "MISSING,MISSING,MISSING,MISSING",
+      "verdict": "REWRITE",
+      "missing": 4,
+      "words_total": 6,
+      "window_words": 120,
+      "state": "REWRITE"
+    },
+    {
+      "case": "H1",
+      "attempt": 1,
+      "held_out": true,
+      "expected": "EITHER",
+      "expected_verdict": "",
+      "proposal_id": 11,
+      "tx": "0xf6a8320cd17b638b9220b358d09c1aaac022b6b5c729a8a28c0cf6d86a0c1c70",
+      "sent_at": "2026-11-16T23:29:40Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,FOUND,FOUND",
+      "verdict": "SKIMMABLE",
+      "missing": 0,
+      "words_total": 41,
+      "window_words": 120,
+      "state": "SKIMMABLE"
+    },
+    {
+      "case": "H2",
+      "attempt": 1,
+      "held_out": true,
+      "expected": "EITHER",
+      "expected_verdict": "",
+      "proposal_id": 12,
+      "tx": "0x0b778f716311383cca8acca0dbcdb64c1aad3c96100af269a4a73f68fe6f7589",
+      "sent_at": "2026-11-16T23:30:18Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,FOUND,FOUND",
+      "verdict": "SKIMMABLE",
+      "missing": 0,
+      "words_total": 42,
+      "window_words": 120,
+      "state": "SKIMMABLE"
+    },
+    {
+      "case": "H3",
+      "attempt": 1,
+      "held_out": true,
+      "expected": "EITHER",
+      "expected_verdict": "",
+      "proposal_id": 13,
+      "tx": "0x4ceba0f502a58089a452593b7e72733da858d19937f33337a23e0a78ae38095e",
+      "sent_at": "2026-11-16T23:30:50Z",
+      "consensus": "decided",
+      "labels": "FOUND,FOUND,FOUND,FOUND",
+      "verdict": "SKIMMABLE",
+      "missing": 0,
+      "words_total": 29,
+      "window_words": 120,
+      "state": "SKIMMABLE"
+    }
+  ],
+  "contract": "0x9F09310beD488465b5cE7De55778E081beab9f27",
+  "contract_sha256": "3f9bf132f70d77977d277458c4b143e7103f530622c25b33f050a823177c5443",
+  "golden_sha256": "fc02bbb65ef4adc913d721b987d48f448cd4d83fc85f9568be13a17d20b53989",
+  "golden_locked_at": "2026-11-16T23:19:47Z",
+  "judge_sha256": "dcb39fe5032c52780c99294ddab353bbf91a42eec5a67d55e9adef4c963abc33",
+  "network": "studio-next",
+  "explorer": "https://explorer-studio-dev.genlayer.com",
+  "owner": "0xEA57CE93183DB5B5f7a0294ABA9B52F6de377F32"
+}

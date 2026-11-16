@@ -1,0 +1,22 @@
+---
+title: The skim window
+description: How a proposal is cut, why it is cut in code, and why padding cannot move the line.
+---
+
+The window is the first N whitespace separated words of the **title followed by the text**, where N is the card's window size (80 to 200). The contract cuts it, and the rest is never given to the judge. See [Window cutting](/docs/reference/window-cutting) for the exact rule and the test vectors.
+
+## Why the cut is code
+
+A moderator applies a bar unevenly and a model run by the author passes the author. With the cut in code, no validator ever sees more than a reader who stopped would. The site cuts the same text the same way in the writing box, so the skim line you see is the one the validators get.
+
+## The title counts
+
+The ask can be in the title: a 12 word title leaves N minus 12 words of text. The answer may be in the title or in the text.
+
+## Padding cannot move the line
+
+The cut counts whitespace separated words. Packing the opening with spaces or symbols does not push the ask out of sight for the reader; it only makes the real text longer, and the ask falls below the line.
+
+## An attempt keeps its rules
+
+The questions and the window are copied into the attempt when it is cut. A card edit applies to later attempts only, so an open attempt is always read under the version it was cut under.

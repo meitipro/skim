@@ -1,0 +1,23 @@
+
+H1 Held out: the amount as a range (expected EITHER)
+  submit 0x6bd91cfe9f686735ef1e62bf7b197f3e73665921bf54c4ba85e67dac61f06735
+  submitted as proposal 11  https://explorer-studio-dev.genlayer.com/tx/0x6bd91cfe9f686735ef1e62bf7b197f3e73665921bf54c4ba85e67dac61f06735
+  judge 0xf6a8320cd17b638b9220b358d09c1aaac022b6b5c729a8a28c0cf6d86a0c1c70
+  MATCH FOUND,FOUND,FOUND,FOUND -> SKIMMABLE
+  https://explorer-studio-dev.genlayer.com/tx/0xf6a8320cd17b638b9220b358d09c1aaac022b6b5c729a8a28c0cf6d86a0c1c70
+
+H2 Held out: a relative date (expected EITHER)
+  submit 0x99783dfe444d5cab708e419dfe34b596ccc16f90173014dfc1cb09596bb4ed18
+  submitted as proposal 12  https://explorer-studio-dev.genlayer.com/tx/0x99783dfe444d5cab708e419dfe34b596ccc16f90173014dfc1cb09596bb4ed18
+  judge 0x0b778f716311383cca8acca0dbcdb64c1aad3c96100af269a4a73f68fe6f7589
+  MATCH FOUND,FOUND,FOUND,FOUND -> SKIMMABLE
+  https://explorer-studio-dev.genlayer.com/tx/0x0b778f716311383cca8acca0dbcdb64c1aad3c96100af269a4a73f68fe6f7589
+
+H3 Held out: the fallback implied (expected EITHER)
+  submit 0x1be0d419157259d8b2de8fd3e419ec18716cca03a7450b7c9398e2e9796fa3f1
+  submitted as proposal 13  https://explorer-studio-dev.genlayer.com/tx/0x1be0d419157259d8b2de8fd3e419ec18716cca03a7450b7c9398e2e9796fa3f1
+  judge 0x4ceba0f502a58089a452593b7e72733da858d19937f33337a23e0a78ae38095e
+  MATCH FOUND,FOUND,FOUND,FOUND -> SKIMMABLE
+  https://explorer-studio-dev.genlayer.com/tx/0x4ceba0f502a58089a452593b7e72733da858d19937f33337a23e0a78ae38095e
+
+wrote eval/results.md: golden 9/10

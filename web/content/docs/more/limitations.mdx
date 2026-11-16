@@ -1,0 +1,20 @@
+---
+title: Limitations
+description: What Skim does not do, and where it departs from the spec.
+---
+
+## What it does not do
+
+- **It checks that the top answers the questions, not that the answers are true,** that the plan is good, or that the rest of the text agrees with the opening. A skimmable proposal is a clear one, not a good one.
+- **A model can be wrong.** In the evaluation the validators labelled the question about the ask MISSING in a case the spec expected to be FOUND. That miss is published, and the prompt was not changed to fit it.
+- **The result does not say where an answer was found.** The prompt returns labels only, as the spec fixes it, so there is no per-question reason. The page shows each label and the cut window.
+- **A shelved proposal cannot be waived.** Its fees have already gone to the card's owner, and the author can submit again after the cooldown.
+- **Test GEN has no value.** The money mechanics are real; the money on Studio Next is not.
+
+## Where this build differs from the spec
+
+1. **The runtime.** The spec names `py-genlayer:5jycge4q…` on GenVM v0.3. Studio Next removed v0.3 and now requires v0.4, so the contract starts from `# v0.4.0` and `py-genlayer:kzybg95x…`. See [Addresses](/docs/reference/addresses).
+2. **`get_card` takes a string.** The spec fixes ten methods, so the one view also answers an account address (its balance and proposals) and the totals.
+3. **Questions are sent as a list of texts**, and the card's fee in wei.
+4. **Fees are paid per attempt.** The spec says a failure keeps the fee for the next try and a `revise` holds it again; this build reads that as each attempt costing the fee, so SKIMMABLE returns all of them and SHELVED sends all of them to the card.
+5. **No bound on reading.** An attempt waits for `judge`, which anyone can call, and the card owner can waive it. The stretch goals (vote page badge, per-type cards, answer extraction, clarity record) are not built.

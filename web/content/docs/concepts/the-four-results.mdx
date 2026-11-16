@@ -1,0 +1,26 @@
+---
+title: The four results
+description: SKIMMABLE, REWRITE, SHELVED and WAIVED, and what each does with the fee.
+---
+
+The model labels each question FOUND or MISSING. The **verdict is computed in code** from the labels and the attempt count.
+
+| Verdict | When | Money | Record |
+|---|---|---|---|
+| **SKIMMABLE** | Every question is FOUND | All the fees held for the proposal go back to its author | The proposal opens for voting |
+| **REWRITE · N** | N questions are MISSING, and attempts are left | The fee stays held for the next try | The missing questions are named |
+| **SHELVED** | The third attempt still has MISSING questions | The fees go to the card's owner | No new proposal from that author on that card for 7 days |
+| **WAIVED** | The card owner waives the rule | The fees go back to the author | Marked as waived on the page, and by whom |
+
+## The rule in code
+
+```python
+def verdict_of(missing, attempt):
+    if missing == 0:
+        return SKIMMABLE
+    return REWRITE if attempt < MAX_ATTEMPTS else SHELVED
+```
+
+## Where the question labels come from
+
+Validators answer one label per question and agree only when every label is the same. Nothing else is compared, so agreeing on the labels is agreeing on the verdict.

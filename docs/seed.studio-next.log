@@ -1,0 +1,32 @@
+  0xB1430d21 0.00 -> 1000.00 GEN
+  0x264B677A 0.00 -> 1000.00 GEN
+  0xd8C9a72E 0.00 -> 1000.00 GEN
+  0x7DaaBF4e 0.00 -> 1000.00 GEN
+  open_card 0xca4ded2936f0a8338a9fbd0cf91083b8c7b928af435f8f815384e2424d9153bd
+  open_card: ok  https://explorer-studio-dev.genlayer.com/tx/0xca4ded2936f0a8338a9fbd0cf91083b8c7b928af435f8f815384e2424d9153bd
+  submit 0xe643f30f8987cb592abd1a7bd91e5846937b08db3deba6f2b9955adb818b0608
+  submit_waived: ok  https://explorer-studio-dev.genlayer.com/tx/0xe643f30f8987cb592abd1a7bd91e5846937b08db3deba6f2b9955adb818b0608
+  judge 0x4e0acfb0f66aece9cce2eab7985eb1f5d2dfa225f0ea10af19058df231e68fb5
+  judge_waived: ok  https://explorer-studio-dev.genlayer.com/tx/0x4e0acfb0f66aece9cce2eab7985eb1f5d2dfa225f0ea10af19058df231e68fb5
+  waive 0x035794aa54190127e562f036f649e92760ee1d21c3b40fc06d06a73ff8644e04
+  waive: ok  https://explorer-studio-dev.genlayer.com/tx/0x035794aa54190127e562f036f649e92760ee1d21c3b40fc06d06a73ff8644e04
+  submit 0x311731355b2d5f71c8473e4c53212d8eef75de346e2388bc1dbcf4bed6e05951
+  submit_shelved: ok  https://explorer-studio-dev.genlayer.com/tx/0x311731355b2d5f71c8473e4c53212d8eef75de346e2388bc1dbcf4bed6e05951
+  judge 0x561c7b0147aad1ab949c7827d6d14bc4ff4f14de802a668b245cb210e55225de
+  judge_shelved_1: ok  https://explorer-studio-dev.genlayer.com/tx/0x561c7b0147aad1ab949c7827d6d14bc4ff4f14de802a668b245cb210e55225de
+  revise 0xddd29276c6087abd73669bad9a910d6f97ed8f92a7c5830ba7c8a5e4ff1c28d8
+  revise_shelved_1: ok  https://explorer-studio-dev.genlayer.com/tx/0xddd29276c6087abd73669bad9a910d6f97ed8f92a7c5830ba7c8a5e4ff1c28d8
+  judge 0x3e5507cca899361a92668a7f11f43bb76153bb477579a1697b6e2aa97d479303
+  judge_shelved_2: ok  https://explorer-studio-dev.genlayer.com/tx/0x3e5507cca899361a92668a7f11f43bb76153bb477579a1697b6e2aa97d479303
+  revise 0x8b9bfcec53ad7dd872f7dbb571848799dabe04d48bb432b15d718444fdd6d258
+  revise_shelved_2: ok  https://explorer-studio-dev.genlayer.com/tx/0x8b9bfcec53ad7dd872f7dbb571848799dabe04d48bb432b15d718444fdd6d258
+  judge 0x9c19a816bcd04a16f223c0eed953f27a853a26ff0fe78d56cdcfd6c6cd499c8f
+  judge_shelved_3: ok  https://explorer-studio-dev.genlayer.com/tx/0x9c19a816bcd04a16f223c0eed953f27a853a26ff0fe78d56cdcfd6c6cd499c8f
+  withdraw 0x8bb71f7a41e25166ec8441c8b04bf9382616c98b9468505a3888cd2679baac15
+  withdraw_seed_dao: ok  https://explorer-studio-dev.genlayer.com/tx/0x8bb71f7a41e25166ec8441c8b04bf9382616c98b9468505a3888cd2679baac15
+  seed_dao: owed 6.0 GEN, wallet 999.9998 -> 1005.9997 after finality
+  withdraw 0xab612ad616dec27ce09f5b91a830b5675fffd54337b262e45bee7a6aad908751
+  withdraw_seed_author_1: ok  https://explorer-studio-dev.genlayer.com/tx/0xab612ad616dec27ce09f5b91a830b5675fffd54337b262e45bee7a6aad908751
+  seed_author_1: owed 2.0 GEN, wallet 997.9999 -> 999.9998 after finality
+  proposal 14: WAIVED, attempts [['FOUND', 'MISSING', 'MISSING', 'MISSING']]
+  proposal 15: SHELVED, attempts [['MISSING', 'MISSING', 'MISSING', 'MISSING'], ['MISSING', 'MISSING', 'MISSING', 'MISSING'], ['FOUND', 'MISSING', 'MISSING', 'MISSING']]
