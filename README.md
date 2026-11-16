@@ -10,6 +10,8 @@ One contract (`contracts/skim.py`, ten methods), a Next.js site with a `/docs` s
 |---|---|
 | Network | GenLayer Studio Next, chain 61997 |
 | Contract | [`0x9F09310beD488465b5cE7De55778E081beab9f27`](https://explorer-studio-dev.genlayer.com/address/0x9F09310beD488465b5cE7De55778E081beab9f27) |
+| Site | https://skim-genlayer.vercel.app |
+| Live reviewer path | [`docs/reviewer-path.studio-next.json`](docs/reviewer-path.studio-next.json): fresh accounts through the live site, REWRITE then SKIMMABLE, withdraw checked after finality |
 | Deploy transaction | [`0xa5f2700b…`](https://explorer-studio-dev.genlayer.com/tx/0xa5f2700bac7f4a811daae9c2608d571e6c87ab676ded4a2dfbf62701a8293ff3) |
 | Source sha256 | `3f9bf132f70d77977d277458c4b143e7103f530622c25b33f050a823177c5443` (held to the deployed bytes by `scripts/verify.py`) |
 | Golden proposals through real consensus | **9 of 10**, the miss published, nothing tuned ([`eval/results.md`](eval/results.md)) |
