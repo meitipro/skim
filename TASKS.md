@@ -9,7 +9,7 @@
 - [x] `web/`: every page of section 6 with genlayer-js 2.0.0-rc.1, with a live skim line in the writing box
 - [x] `/docs`: every page of section 7, generated reference, plus `/llms.txt`
 - [x] `scripts/seed.py`, README, `submission/`
-- [ ] Repository on GitHub
-- [ ] Site on Vercel
-- [ ] Reviewer path on the live site from fresh accounts
+- [x] Repository on GitHub: https://github.com/meitipro/skim
+- [x] Site on Vercel: https://skim-genlayer.vercel.app
+- [x] Reviewer path on the live site from fresh accounts (docs/reviewer-path.studio-next.json)
 - [ ] Portal entry sent, X post, demo recorded: only the user can do these (`HANDOFF.md`)

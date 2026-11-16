@@ -1,0 +1,109 @@
+{
+  "site": "https://skim-genlayer.vercel.app",
+  "contract": "0x9F09310beD488465b5cE7De55778E081beab9f27",
+  "started": "2026-11-16T23:45:10.558Z",
+  "steps": [
+    {
+      "step": "faucet",
+      "account": "reviewer_dao_202611162345",
+      "address": "0x4454A7377Eb2252Fe4d0230a5386527D2e37ED59",
+      "from": "0",
+      "to": "20000000000000000000",
+      "note": "a lowercase address, checksummed by the route"
+    },
+    {
+      "step": "faucet",
+      "account": "reviewer_author_202611162345",
+      "address": "0x9c8F90c719670E49f3B15085aF4b815d048c8E29",
+      "from": "0",
+      "to": "20000000000000000000",
+      "note": "a lowercase address, checksummed by the route"
+    },
+    {
+      "step": "open_card",
+      "cardId": 3,
+      "hash": "0x28eeb3f2c6987a7cdcec11477f3fb2ea0fced2cae759593c50e6885362034dd9",
+      "window_words": 80,
+      "fee": "2000000000000000000"
+    },
+    {
+      "step": "submit_wrong_fee",
+      "hash": "0x581178db8119d586de9d6058111b2b16e204b7853ed014d60464a9375a53155b",
+      "refusal": "the fee of this card is exactly 2000000000000000000 wei",
+      "note": "refused with the contract's own sentence: accepted, but not a success"
+    },
+    {
+      "step": "submit",
+      "proposalId": 16,
+      "hash": "0xa0d13c3f304cd0125b9fc1dd0613dfbb8651ca208123cbf1c8a793266d62f5c7",
+      "words_total": 137,
+      "note": "the window cut by the contract is the window cut by the site code, word for word"
+    },
+    {
+      "step": "judge",
+      "proposalId": 16,
+      "hash": "0xd14b5b1a4a62d3518bd5a5d95a990ca894fad33e67dcda2daf439c5eb0fb56da",
+      "labels": [
+        "MISSING",
+        "MISSING",
+        "MISSING",
+        "MISSING"
+      ],
+      "verdict": "REWRITE",
+      "missing": 4
+    },
+    {
+      "step": "revise_same_text",
+      "hash": "0x4ee34adef7937664a3d5a6e978f2c4f368db7413f6101f6fb291a545d471de0c",
+      "refusal": "an attempt is a new text"
+    },
+    {
+      "step": "rewrite",
+      "proposalId": 16,
+      "revise": "0x550673ef6e2e6e9c03a8a5e646f78733d0d9db66c42e4502a5169cd460e345fd",
+      "judge": "0x5688f56285989b37acd66cfc2a82c656207238f7801844d9b1cb649de4a195df",
+      "labels": [
+        "FOUND",
+        "FOUND",
+        "FOUND",
+        "FOUND"
+      ],
+      "verdict": "SKIMMABLE",
+      "state": "SKIMMABLE",
+      "held": "0"
+    },
+    {
+      "step": "waive_by_the_wrong_account",
+      "hash": "0x7773358e5b69443868914ec0e62e0c4e7070568425ddc1e38939730c3280aa4a",
+      "refusal": "only the owner of the card may waive the rule"
+    },
+    {
+      "step": "books",
+      "cards": 3,
+      "proposals": 16,
+      "received": "38000000000000000000",
+      "fees_held": "14000000000000000000",
+      "owed": "16000000000000000000",
+      "paid": "8000000000000000000",
+      "note": "received = fees_held + owed + paid"
+    },
+    {
+      "step": "withdraw",
+      "hash": "0x884bfcaee570fc7043db41fde20ea2eb453c7f0c4e1b56227435260f8556f8df",
+      "owed": "4000000000000000000",
+      "wallet_before": "15999449260249980239",
+      "wallet_after_finality": "19999322953749977416",
+      "gained": "3999873693499997177",
+      "fee_difference": "126306500002823",
+      "final_status": "FINALIZED",
+      "note": "the wallet gains what was owed, less the fee of the withdraw transaction"
+    },
+    {
+      "step": "pages",
+      "checked": 12,
+      "all": 200,
+      "proposal_page_shows": "SKIMMABLE"
+    }
+  ],
+  "finished": "2026-11-16T23:48:16.985Z"
+}
