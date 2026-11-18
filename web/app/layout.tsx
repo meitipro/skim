@@ -4,12 +4,12 @@ import type { Metadata, Viewport } from 'next';
 import './global.css';
 
 /*
- * Outfit, Geist Mono and Instrument Serif, loaded by the browser from Google
+ * Bricolage Grotesque, Instrument Sans and JetBrains Mono, loaded by the browser from Google
  * Fonts rather than downloaded at build time, so a build never depends on
  * reaching the font CDN.
  */
 const FONTS =
-  'https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600&family=Work+Sans:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap';
+  'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap';
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skim-genlayer.vercel.app'),
